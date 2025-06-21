@@ -1,0 +1,408 @@
+--------------------inicio.php-----------------------------------------
+
+<?php
+    $motelName = "Motel PitStop";
+    $slogan = "Conforto, Discrição e Prazer Garantido!";
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $motelName; ?> - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><?php echo $motelName; ?></h1>
+        <p><?php echo $slogan; ?></p>
+    </header>
+
+    <nav style="width:100%; display:flex; justify-content:flex-end; background:#f5f5f5; padding:20px 0;">
+        <ul style="display:flex; gap:40px; margin:0 50px 0 0; list-style:none;">
+            <li><a href="inicio.php" style="font-size:22px; text-decoration:none; color:#333;">Início</a></li>
+            <li><a href="suites.php" style="font-size:22px; text-decoration:none; color:#333;">Suítes</a></li>
+            <li><a href="SAC.php" style="font-size:22px; text-decoration:none; color:#333;">SAC</a></li>
+        </ul>
+    </nav>
+
+    <section style="text-align:center; margin:60px 0;">
+        <h2>Bem-vindo ao <?php echo $motelName; ?></h2>
+        <p style="font-size:20px; max-width:600px; margin:20px auto;">
+            Descubra o melhor em conforto, privacidade e experiências inesquecíveis. Conheça nossas suítes exclusivas e faça já sua reserva!
+        </p>
+        <a href="suites.php">
+            <button style="padding:15px 35px; font-size:20px; border-radius:8px; background:#007bff; color:#fff; border:none; cursor:pointer;">
+                Ver Suítes
+            </button>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> <?php echo $motelName; ?> - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+----------------------------------------suítes.php----------------------------------------------
+
+<?php
+    $motelName = "Motel PitStop";
+    $slogan = "Conforto, Discrição e Prazer Garantido!";
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $motelName; ?></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><?php echo $motelName; ?></h1>
+        <p><?php echo $slogan; ?></p>
+    </header>
+
+    <nav style="width:100%; display:flex; justify-content:flex-end; background:#f5f5f5; padding:20px 0; position:fixed; top:0; left:0; z-index:1000;">
+        <ul style="display:flex; gap:40px; margin:0 50px 0 0; list-style:none;">
+             <li><a href="inicio.php" style="font-size:22px; text-decoration:none; color:#333;">Início</a></li>
+            <li><a href="#suites" style="font-size:22px; text-decoration:none; color:#333;">Suítes</a></li>
+            <li><a href="#SAC" style="font-size:22px; text-decoration:none; color:#333;">SAC</a></li>
+        </ul>
+    </nav>
+    <div style="height:80px;"></div> <!-- Espaço para não cobrir o conteúdo -->
+
+    <section id="suites">
+        <h2>Nossas Suítes Principais</h2>
+        <div class="suite">
+            <img src="img/luxo.jpg" alt="Suíte Luxo" style="width:400px; height:260px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+            <h3>Suíte Luxo</h3>
+            <p>Banheira de hidromassagem, TV 4K, ar-condicionado e muito mais!</p>
+            <a href="pagamento.php?suite=luxo">
+                <button style="padding:10px 25px; font-size:16px; border-radius:6px; background:#007bff; color:#fff; border:none; cursor:pointer;">
+                    Reservar e Pagar
+                </button>
+            </a>
+        </div>
+        <div class="suite">
+            <img src="img/premium.jpg" alt="Suíte Master" style="width:400px; height:260px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+            <h3>Suíte Master</h3>
+            <p>Ambiente espaçoso, decoração temática e total privacidade.</p>
+            <a href="pagamento.php?suite=master">
+                <button style="padding:10px 25px; font-size:16px; border-radius:6px; background:#007bff; color:#fff; border:none; cursor:pointer;">
+                    Reservar e Pagar
+                </button>
+            </a>
+        </div>
+        <div class="suite">
+            <img src="img/romance.jpg" alt="Suíte Romântica" style="width:400px; height:260px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+            <h3>Suíte Romântica</h3>
+            <p>Clima intimista, iluminação especial, cama king size e decoração exclusiva.</p>
+            <a href="pagamento.php?suite=romantica">
+                <button style="padding:10px 25px; font-size:16px; border-radius:6px; background:#007bff; color:#fff; border:none; cursor:pointer;">
+                    Reservar e Pagar
+                </button>
+            </a>
+        </div>
+        <div class="suite">
+            <img src="img/spa.jpg" alt="Suíte Spa" style="width:400px; height:260px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+            <h3>Suíte Spa</h3>
+            <p>Jacuzzi privativa, sauna, ducha dupla e amenities premium.</p>
+            <a href="pagamento.php?suite=spa">
+                <button style="padding:10px 25px; font-size:16px; border-radius:6px; background:#007bff; color:#fff; border:none; cursor:pointer;">
+                    Reservar e Pagar
+                </button>  
+            </a>
+        </div>
+        <div class="suite">
+            <img src="img/executiva.jpg" alt="Suíte Executiva" style="width:400px; height:260px; object-fit:cover; border-radius:12px; margin-bottom:15px;">
+            <h3>Suíte Executiva</h3>
+            <p>Ambiente moderno, mesa de trabalho, Wi-Fi de alta velocidade e minibar.</p>
+            <a href="pagamento.php?suite=executiva">
+                <button style="padding:10px 25px;
+                font-size:16px;
+                border-radius:6px;
+                background:#007bff;
+                color:#fff;
+                border:none;
+                cursor:pointer;">
+                    Reservar e Pagar
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> <?php echo $motelName; ?> - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+-------------------------------------------------pagamento.php--------------------------------------------------------------
+
+<?php
+// Conexão com o banco de dados
+$conn = new mysqli("localhost", "root", "", "motelpitstop");
+if ($conn->connect_error) {
+    die("Erro de conexão: " . $conn->connect_error);
+}
+
+// Recebe a suíte via GET
+$suite = isset($_GET['suite']) ? $_GET['suite'] : '';
+$horas = isset($_GET['horas']) ? intval($_GET['horas']) : 1;
+$pessoas = isset($_GET['pessoas']) ? intval($_GET['pessoas']) : 2;
+
+// Definindo valor base por hora de cada suíte
+$valorHora = 0;
+switch ($suite) {
+    case 'luxo':
+        $valorHora = 80.00;
+        break;
+    case 'master':
+        $valorHora = 120.00;
+        break;
+    case 'romantica':
+        $valorHora = 100.00;
+        break;
+    case 'spa':
+        $valorHora = 150.00;
+        break;
+    case 'executiva':
+        $valorHora = 90.00;
+        break;
+    default:
+        $valorHora = 0.00;
+}
+
+$valorPadrao = number_format($valorHora * $horas, 2, '.', '');
+
+// Processa o formulário de pagamento
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nome = $conn->real_escape_string($_POST['nome']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $valor = floatval($_POST['valor']);
+    $metodo = $conn->real_escape_string($_POST['metodo']);
+    $suite = $conn->real_escape_string($_POST['suite']);
+    $horas = intval($_POST['horas']);
+    $pessoas = intval($_POST['pessoas']);
+
+    $sql = "INSERT INTO pagamentos (nome, email, valor, metodo, suite, horas, pessoas) VALUES ('$nome', '$email', $valor, '$metodo', '$suite', $horas, $pessoas)";
+    if ($conn->query($sql) === TRUE) {
+        // Redireciona para a página final após o pagamento
+        header("Location: final_pag.php");
+        exit;
+    } else {
+        $mensagem = "Erro ao registrar pagamento: " . $conn->error;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Atualiza o valor automaticamente ao mudar as horas
+        function atualizarValor() {
+            var valorHora = <?php echo json_encode($valorHora); ?>;
+            var horas = document.getElementsByName('horas')[0].value;
+            var valorTotal = (valorHora * horas).toFixed(2);
+            document.getElementsByName('valor')[0].value = valorTotal;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Pagamento</h1>
+    </header>
+    <nav style="width:100%; display:flex; justify-content:flex-end; background:#f5f5f5; padding:20px 0; position:fixed; top:0; left:0; z-index:1000;">
+        <ul style="display:flex; gap:40px; margin:0 50px 0 0; list-style:none;">
+            <li><a href="inicio.php" style="font-size:22px; text-decoration:none; color:#333;">Início</a></li>
+        </ul>
+    </nav>
+    <div style="height:80px;"></div> <!-- Espaço para não cobrir o conteúdo -->
+    <section>
+    <?php if (isset($mensagem)) echo "<p>$mensagem</p>"; ?>
+    <form method="post" action="">
+        <input type="hidden" name="suite" value="<?php echo htmlspecialchars($suite); ?>">
+        <label>Nome:
+            <input type="text" name="nome" required>
+        </label><br><br>
+        <label>E-mail:
+            <input type="email" name="email" required>
+        </label><br><br>
+        <label>Suíte:
+            <input type="text" value="<?php echo htmlspecialchars(ucfirst($suite)); ?>" disabled>
+        </label><br><br>
+        <label>Quantas horas?
+            <input type="number" name="horas" min="1" max="24" required value="<?php echo $horas; ?>" onchange="atualizarValor()">
+        </label><br><br>
+        <label>Quantas pessoas?
+            <input type="number" name="pessoas" min="1" max="6" required value="<?php echo $pessoas; ?>">
+        </label><br><br>
+        <label>Valor total:
+            <input type="number" name="valor" step="0.01" required value="<?php echo $valorPadrao; ?>" readonly>
+        </label><br><br>
+        <label>Método de Pagamento:
+            <select name="metodo" required>
+                <option value="cartao">Cartão</option>
+                <option value="boleto">Boleto</option>
+                <option value="pix">PIX</option>
+            </select>
+        </label><br><br>
+        <button type="submit">Reservar</button>
+    </form>
+    </section>
+</body>
+</html>
+
+-----------------------------------------------------------------final_pag.php---------------------------------------------
+
+<?php
+// final_pag.php
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva Efetuada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .success {
+            color: #27ae60;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #219150;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success">&#10004; Reserva efetuada com sucesso!</div>
+        <p>Obrigado por reservar conosco.<br>
+        Em breve você receberá um e-mail com os detalhes da sua reserva.</p>
+        <a href="inicio.php" class="btn">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
+
+-------------------------------------------------------------sac.php--------------------------------------------------
+
+<?php
+// sac.php - Página de SAC para Motel Pitstop
+
+// Processa o formulário quando enviado
+$mensagem = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nome = htmlspecialchars($_POST['nome'] ?? '');
+    $email = htmlspecialchars($_POST['email'] ?? '');
+    $assunto = htmlspecialchars($_POST['assunto'] ?? '');
+    $mensagem_usuario = htmlspecialchars($_POST['mensagem'] ?? '');
+
+    // Aqui você pode enviar o e-mail ou salvar no banco de dados
+    // Exemplo: mail('contato@motelpitstop.com', $assunto, $mensagem_usuario);
+
+    $mensagem = 'Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.';
+}
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SAC - Motel Pitstop</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; }
+        .menu {
+            width: 100%;
+            background: #b71c1c;
+            padding: 16px 0;
+            text-align: right;
+            box-sizing: border-box;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 40px;
+            padding: 8px 18px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .menu a:hover {
+            background: #fff;
+            color: #b71c1c;
+        }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
+        h1 { color: #b71c1c; }
+        label { display: block; margin-top: 15px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
+        button { margin-top: 20px; background: #b71c1c; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        .mensagem { margin-top: 20px; color: green; }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="inicio.php">Início</a>
+    </nav>
+    <div class="container">
+        <h1>Fale Conosco - SAC Motel Pitstop</h1>
+        <p>Envie sua dúvida, sugestão ou reclamação. Retornaremos o mais breve possível.</p>
+        <?php if ($mensagem): ?>
+            <div class="mensagem"><?= $mensagem ?></div>
+        <?php endif; ?>
+        <form method="post" action="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
