@@ -1,0 +1,202 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fce4ec 0%, #fff 100%);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff1744 0%, #72062a 100%);
+    color: white;
+    text-align: center;
+    padding: 32px 10px 24px 10px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 0 4px 16px rgba(240,98,146,0.15);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(240,98,146,0.08);
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    margin: 0 60px 0 0;
+    padding: 22px 0;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #ff1744;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+    background: #ff1744;
+    color: #fff;
+}
+
+section {
+    padding: 32px 10px 24px 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.suite {
+    border: none;
+    box-shadow: 0 2px 12px rgba(240,98,146,0.10);
+    padding: 24px;
+    margin-bottom: 32px;
+    border-radius: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    transition: box-shadow 0.2s;
+}
+
+.suite:hover {
+    box-shadow: 0 6px 24px rgba(240,98,146,0.18);
+}
+
+.suite img {
+    width: 400px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(240,98,146,0.10);
+}
+
+.suite h3 {
+    margin-top: 0;
+    color: #ff1744;
+}
+
+.suite p {
+    margin-bottom: 18px;
+}
+
+.suite a button {
+    background: linear-gradient(90deg, #ff1744 0%, #f06292 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(240,98,146,0.10);
+}
+
+.suite a button:hover {
+    background: linear-gradient(90deg, #f06292 0%, #ff1744 100%);
+    box-shadow: 0 4px 16px rgba(240,98,146,0.18);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(240,98,146,0.10);
+    margin-bottom: 32px;
+}
+
+table, th, td {
+    border: none;
+}
+
+th {
+    background: #ff1744;
+    color: #fff;
+    font-weight: 600;
+    padding: 16px;
+    font-size: 18px;
+}
+
+td {
+    padding: 14px;
+    font-size: 17px;
+    color: #333;
+    border-bottom: 1px solid #f8bbd0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    padding: 28px 24px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(240,98,146,0.10);
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #ff1744;
+}
+
+form input, form textarea {
+    margin-bottom: 18px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #f06292;
+    font-size: 16px;
+    background: #fce4ec;
+    transition: border 0.2s;
+}
+
+form input:focus, form textarea:focus {
+    border: 1.5px solid #ff1744;
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(90deg, #ff1744 0%, #f06292 100%);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(240,98,146,0.10);
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #f06292 0%, #ff1744 100%);
+    box-shadow: 0 4px 16px rgba(240,98,146,0.18);
+}
+
+footer {
+    background: linear-gradient(90deg, #f06292 0%, #ff1744 100%);
+    text-align: center;
+    padding: 18px;
+    color: white;
+    font-size: 16px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-top: 40px;
+}
